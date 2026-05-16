@@ -25,3 +25,17 @@ sesuai jadwal masing-masing.
 Tanpa drop(spawner), program tetap berjalan normal karena spawner otomatis di-drop
 saat keluar dari scope main(). Fungsi drop(spawner) dipakai untuk memberi sinyal
 ke executor bahwa tidak ada task baru lagi, sehingga executor tahu kapan harus berhenti.
+
+## Experiment 2.1: Original code, and how it run
+
+### Cara menjalankan:
+- Jalankan server: `cargo run --bin server` di folder `broadcast-chat`
+- Jalankan client (bisa lebih dari satu): `cargo run --bin client`
+
+### Hasil:
+![Server](images/experiment2-1-server.png)
+![Client](images/experiment2-1-client.png)
+
+Server menerima koneksi dari semua client dan mem-broadcast setiap pesan yang masuk
+ke semua client yang terhubung. Jadi kalau satu client kirim pesan, semua client lain
+bakal nerima pesan yang sama.

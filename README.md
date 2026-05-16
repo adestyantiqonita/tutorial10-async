@@ -39,3 +39,12 @@ ke executor bahwa tidak ada task baru lagi, sehingga executor tahu kapan harus b
 Server menerima koneksi dari semua client dan mem-broadcast setiap pesan yang masuk
 ke semua client yang terhubung. Jadi kalau satu client kirim pesan, semua client lain
 bakal nerima pesan yang sama.
+
+## Experiment 2.2: Modifying port
+
+Port diubah dari 2000 ke 8080. Ada dua file yang perlu diubah:
+- `src/bin/server.rs`: ubah port di `TcpListener::bind` dan println
+- `src/bin/client.rs`: ubah port di `ClientBuilder::from_uri`
+
+Keduanya menggunakan protokol websocket (`ws://`). Port harus sama di kedua sisi
+karena client perlu konek ke port yang sama dengan yang di-listen server.

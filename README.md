@@ -48,3 +48,11 @@ Port diubah dari 2000 ke 8080. Ada dua file yang perlu diubah:
 
 Keduanya menggunakan protokol websocket (`ws://`). Port harus sama di kedua sisi
 karena client perlu konek ke port yang sama dengan yang di-listen server.
+
+## Experiment 2.3: Small changes, add IP and Port
+
+![Experiment 2.3](images/experiment2-3.png)
+
+Modifikasi dilakukan di `server.rs` dengan mengubah format pesan yang dibroadcast
+menjadi `{addr}: {text}` sehingga setiap pesan yang diterima client akan menampilkan
+IP dan port pengirimnya. Ini berguna untuk tahu pesan itu datang dari client mana.

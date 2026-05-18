@@ -67,3 +67,15 @@ Cara menjalankan:
 - YewChat: `npm start` di folder YewChat (port 8000)
 
 Dua user bisa chat satu sama lain dan pesan terbroadcast ke semua user yang terhubung.
+
+## Experiment 3.2: Be Creative!
+
+![Experiment 3.2](images/experiment3-2.png)
+
+Modifikasi yang dilakukan:
+- Tema warna diganti jadi dusty pink/lavender yang lebih aesthetic
+- Judul "Chat!" diganti jadi "Curcol Zone 💬"
+- Status user diganti dari "Hi there!" jadi "lagi online~ 🌸"
+- Placeholder input diganti jadi "Ketik sesuatu... atau diem aja 🤷"
+- Tambah fitur kirim pesan dengan tombol Enter
+- Warna tombol send disesuaikan dengan tema

@@ -56,3 +56,14 @@ karena client perlu konek ke port yang sama dengan yang di-listen server.
 Modifikasi dilakukan di `server.rs` dengan mengubah format pesan yang dibroadcast
 menjadi `{addr}: {text}` sehingga setiap pesan yang diterima client akan menampilkan
 IP dan port pengirimnya. Ini berguna untuk tahu pesan itu datang dari client mana.
+
+## Experiment 3.1: Original code
+
+![Experiment 3.1](images/experiment3-1.png)
+
+YewChat berhasil dijalankan di browser menggunakan Yew dan WebAssembly.
+Cara menjalankan:
+- SimpleWebsocketServer: `npm start` di folder SimpleWebsocketServer (port 8080)
+- YewChat: `npm start` di folder YewChat (port 8000)
+
+Dua user bisa chat satu sama lain dan pesan terbroadcast ke semua user yang terhubung.
